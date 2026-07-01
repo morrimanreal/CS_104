@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Flea Market</title>
+    <title>Contact</title>
   </head>
   <body>
     <nav aria-label="Main navigation">
@@ -33,34 +33,40 @@
         </li>
       </ul>
     </nav>
-
-    <header>
-      <h1 class="title">Flea Market</h1>
-
-      <h2 class="description">
-        An online thrift store sold by the people for the people.
-      </h2>
-
-      <p>
-        Welcome to our online flea market — a place where unique finds, vintage
-        treasures, handmade goods, and affordable everyday items come together
-        in one marketplace. We connect shoppers with independent sellers
-        offering everything from clothing and accessories to antiques,
-        collectibles, home décor, and rare one-of-a-kind pieces. Our store is
-        built for people who love discovering hidden gems and supporting small
-        businesses. Whether you're searching for retro fashion, handcrafted
-        products, bargain deals, or timeless vintage items, there’s always
-        something new to explore. Shop sustainably, save money, and uncover
-        items with character and history — all from the comfort of your home.
-      </p>
-    </header>
-
+    <header></header>
     <main>
-      <div class="services-options">
-        <a href="services.html" class="btn" aria-label="Find vintage"
-          >Vintage Finds</a
-        >
-      </div>
+      <form class="contact-form">
+        <h2>Contact Us</h2>
+
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email"
+          required
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write your message..."
+          rows="5"
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
     </main>
     <footer>
       <nav aria-label="Footer navigation">

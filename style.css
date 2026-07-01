@@ -34,7 +34,27 @@ main {
 }
 
 .title {
-    text-align:center; font-family: Verdana; font-size:40px; margin-bottom:20px; color:black;
+    font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #ff4d6d;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 40px;
+
+  text-shadow:
+    0 2px 5px rgba(0,0,0,0.2),
+    0 4px 10px rgba(255,77,109,0.4);
+
+  background-color: #222;
+  padding: 20px;
+  border-radius: 15px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
 
 .description {
@@ -45,14 +65,51 @@ main {
     color: darkseagreen;
 }
 
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #000000dc;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
 .services-options {
     list-style: none; 
-    display: flex; flex-direction: column; 
+    display: flex; flex-direction: row; 
     align-items: center; 
     justify-content: center; 
     gap: 20px; 
     padding-bottom: 25px; 
     margin: 0;
+}
+
+.btn {
+  background: linear-gradient(135deg, #865faf, #5470a2);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 .product {
@@ -101,4 +158,52 @@ footer nav {
     gap: 25px;
     margin: 0;
     padding: 0;
+}
+
+
+/* CONTACT FORM CSS */
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #222;
+  color: white;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #1b5edc;
 }
