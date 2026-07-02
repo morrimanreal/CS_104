@@ -1,3 +1,9 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: auto;
+}
+
 /* NAV CONTAINER */
 nav {
     display: flex;
@@ -6,6 +12,27 @@ nav {
     background-color: #111;
     padding: 15px 30px;
 }
+
+.nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: white;
+    }
+
+.nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+  .nav-links a:hover {
+      background: #2575fc;
+    }
+
 
 /* LOGO AREA */
 nav .logo {
@@ -145,19 +172,37 @@ button:active {
     font-size:20px; font-weight:bold;
 }
 
+/* FOOTER */
+
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #111;
-    padding: 15px 30px;
+  background: #222;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-footer nav { 
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #2575fc;
 }
 
 
@@ -207,3 +252,21 @@ footer nav {
 .contact-form button:hover {
   background: #1b5edc;
 }
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+       .nav-links {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 15px;
+      }
+      .nav-links a {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
